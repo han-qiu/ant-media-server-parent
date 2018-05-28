@@ -99,7 +99,7 @@
 		<webrtcapp.version>1.3.2-SNAPSHOT</webrtcapp.version>
 		<consoleapp.version>1.3.7-SNAPSHOT</consoleapp.version>
 		<liveapp.version>1.3.7-SNAPSHOT</liveapp.version>
-		<webrtcappee.version>1.3.5-SNAPSHOT</webrtcappee.version>
+		<webrtcappee.version>1.3.6-SNAPSHOT</webrtcappee.version>
 		<ant-media-server-service.version>1.2.2</ant-media-server-service.version>
 		<ant-media-server-enterprise.version>${project.parent.version}</ant-media-server-enterprise.version>
 
