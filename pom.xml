@@ -1,21 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>io.antmedia</groupId>
-	<artifactId>parent</artifactId>
-	<version>1.3.6.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
-
-	<name>Ant Media Server :: Parent</name>
-	<description>Ant Media Server Parent Project</description>
-	<url>https://github.com/antmedia/Ant-Media-Server</url>
-	<inceptionYear>2016</inceptionYear>
 	<parent>
 		<groupId>org.red5</groupId>
 		<artifactId>red5-parent</artifactId>
 		<version>1.0.9-M2</version>
 	</parent>
+	
+	<name>Ant Media Server :: Parent</name>
+	<description>Ant Media Server Parent Project</description>
+	<url>https://github.com/antmedia/Ant-Media-Server</url>
+	<inceptionYear>2016</inceptionYear>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>io.antmedia</groupId>
+	<artifactId>parent</artifactId>
+	<version>1.3.6.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
 	<organization>
 		<name>Ant Media</name>
 		<url>https://github.com/antmedia</url>
@@ -91,6 +92,7 @@
 		<servlet.version>2.5</servlet.version>
 		<maven-failsafe-plugin.version>2.20.1</maven-failsafe-plugin.version>
 		<javacpp.ffmpeg.version>3.2.1-1.3</javacpp.ffmpeg.version>
+		
 
 		<jersey.version>2.26</jersey.version>
 		<mapdb.version>3.0.6</mapdb.version>
@@ -102,7 +104,7 @@
 		<webrtcappee.version>1.3.6-SNAPSHOT</webrtcappee.version>
 		<ant-media-server-service.version>1.2.2</ant-media-server-service.version>
 		<ant-media-server-enterprise.version>${project.parent.version}</ant-media-server-enterprise.version>
-		<guava.version>21.0</guava.version>
+		
 
 	</properties>
 	<repositories>
