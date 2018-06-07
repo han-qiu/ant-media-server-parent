@@ -95,7 +95,7 @@
 		
 
 		<jersey.version>2.26</jersey.version>
-		<mapdb.version>3.0.6</mapdb.version>
+		<mapdb.version>3.0.7</mapdb.version>
 
 		<enunciate.version>2.10.0</enunciate.version>
 		<webrtcapp.version>${project.parent.version}</webrtcapp.version>
