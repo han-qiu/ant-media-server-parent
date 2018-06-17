@@ -14,8 +14,6 @@
 		<artifactId>red5-parent</artifactId>
 		<version>1.0.9-M2</version>
 	</parent>
-	
-	
 	<organization>
 		<name>Ant Media</name>
 		<url>https://github.com/antmedia</url>
