@@ -1,35 +1,32 @@
 language: java
 jdk:
-    - openjdk8
+- openjdk8
 sudo: false
-
 env:
   global:
-    secure: kCU7QNiF2NdGD5n7AbB5ujGtyjsbCXnCr8z3lIpQ3zkDh8cU8AWYWl0K46FeC/msoLl60aE07mhlEykbtYU7k3yHFaKD7F3pwh65HEOrbvPeiPrEk/SNvDSxK8Bkll0igwK4H+42tVzL1ZIiquNANE6Z2Oasiczq81uYLTPocA1h9tLJm04xY2n0DGzaOnUdmVWH8lYt1RKstLHDgFnCsn7bxWh0j75zdMCKvYRHAg9fAptwdTFGNF7ZgD8D5uXmowH6sAHVQRyCfKv4x8TZkLb7BTM6kZ1p6LxsgXx7KwkyHWV5pgpEToy6cIM7mjCC1GsBv9F6d7l+rwfq09BgI5JC2jCyTbZZJ4YYuYNVDePRolRssJqNyHMVpSJ1/xiPenlNgUHW/v69BEflxvEK90e8e93wZLgLc3LulZ0DURZd3CemnlfMvbKK6FzY99TsZVInAbfV4jm0+3l1ZXa4mRne7ms1nOo7eT/RVJSsc4S4QM4NVO2HtgXIELr/rDaqTM81SQ7WwJgyKQYLxMvgGPtIzR4Y8vhF0QvQIb3VIWIcnl4mBNHnU4+mmQkw/CE9CtDUpHzVI7jpfW03ayVvOpFLxYkJec08GkokWReFQu3NNDpWIS4XXFjt+5Up2ythtBLxsSeT0MgdMcGB/GK1hD8+PKtzZEXHupLDeUxvlg4=
+  - secure: bz7jnorOC9afY1D1V0huPPZo1DuqUyo42LeBbIiWgc8PICYlnh9JHlKovUmAGdfSEGAa+hQLGPV6PEwdv1a1hi4VZmvDd0WG76HdMb2ZjKt3rq0g0MXdOOdW/rCEXPi42RgRP3XMH+2nDvtnTNNSRBVGOaKNh1c2HMYXKoDEWIPXn6PVQSfVpT4Iu/OSkrMcF24xMDHb23cpl+xCDXml9RMNQY7a6bic8437Fq8fjyc5h7xAT7CNJScypJojVdnqlxq/OnGVaitrEm368i5FdOm8G6vqbTn/kpv42XfwqVLl8Lw/zAnwyNNEYoyODN1qsUVE73zfvL/lMpxhySd8l99/RnA93xWhehkISaxl7fBnQSZIgPnXlbobsDZsuhqT4giDVqbt5N4Z7124LufCVjEU1XDjgFzLzfICnB+f2HD5J7yzTeVGNz4VnwdkcTy80ig7mXTGZAxZf39zKaT1F0j5IaMVuCIoR59/k7sKV678qmywlpI8YgddcrNPw82HCFa9r5TnWv3yXwCHB2YwJB67R2He0UMhSLe/dlqVcieo/Wsa4AUYFT1U3l6A+iO2UcCxVtSZWYDMPm+YuD+shO7FWtxGoqfoLpZSgzIqKiRef9DXY11Bk1nXMht68q+siZ3sCqCo+M1TESZSUTC/cP9Lj3gByaEfqLpUHXzxT7k=
 before_install:
-- openssl aes-256-cbc -k "$GPG_PASSPHRASE" -in codesigning.asc.enc -out codesigning.asc -d
+- openssl aes-256-cbc -k "$GPG_PASSPHRASE" -in codesigning.asc.enc -out codesigning.asc
+  -d
 - gpg --fast-import codesigning.asc
-
+install:
+- mvn install -DskipTests=true -Dmaven.javadoc.skip=true -Dgpg.skip=true -B -V --quiet
+script: 
 cache:
   directories:
-    - '$HOME/.m2/repository'
-
+  - "$HOME/.m2/repository"
 deploy:
-  - provider: script
-    script: "mvn deploy -DskipTests --quiet --settings mvn-settings.xml"
-    skip_cleanup: true
-    on:
-      tags: false
-      branch: master
-      condition: $(mvn -q -Dexec.executable="echo" -Dexec.args='${project.version}' --non-recursive exec:exec)  = *"SNAPSHOT"*
-
-  - provider: script
-    script: "mvn deploy -DskipTests --quiet --settings mvn-settings.xml"
-    skip_cleanup: true
-    on:
-      #deploy to maven if it is master branch and tagged
-      tags: true
-      branch: master
-
-#above configuration prevents deploying a new release(not snapshot) if it is not tagged
-
+- provider: script
+  script: mvn deploy -DskipTests --quiet --settings mvn-settings.xml
+  skip_cleanup: true
+  on:
+    tags: false
+    branch: master
+    condition: $(mvn -q -Dexec.executable="echo" -Dexec.args='${project.version}'
+      --non-recursive exec:exec)  = *"SNAPSHOT"*
+- provider: script
+  script: mvn deploy -DskipTests --quiet --settings mvn-settings.xml
+  skip_cleanup: true
+  on:
+    tags: true
+    branch: master
