@@ -94,7 +94,7 @@
 		<webrtcapp.version>1.4.0</webrtcapp.version>
 		<consoleapp.version>1.4.0</consoleapp.version>
 		<liveapp.version>1.4.0</liveapp.version>
-		<webrtcappee.version>1.4.0</webrtcappee.version>	
+		<webrtcappee.version>1.4.1-SNAPSHOT</webrtcappee.version>	
 		<ant-media-server-service.version>1.2.3</ant-media-server-service.version>
 
 		<ant-media-server-enterprise.version>${project.parent.version}</ant-media-server-enterprise.version>
