@@ -92,7 +92,7 @@
 		<vertx-core.version>3.4.2</vertx-core.version>
 		<enunciate.version>2.10.0</enunciate.version>
 		<webrtcapp.version>1.4.0</webrtcapp.version>
-		<consoleapp.version>1.4.0</consoleapp.version>
+		<consoleapp.version>1.4.2-SNAPSHOT</consoleapp.version>
 		<liveapp.version>1.4.0</liveapp.version>
 		<webrtcappee.version>1.4.1</webrtcappee.version>	
 		<ant-media-server-service.version>1.2.3</ant-media-server-service.version>
