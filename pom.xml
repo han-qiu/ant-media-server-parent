@@ -87,7 +87,7 @@
 		<servlet.version>2.5</servlet.version>
 		<maven-failsafe-plugin.version>2.20.1</maven-failsafe-plugin.version>
 		<javacpp.ffmpeg.version>3.4.2-1.4.1</javacpp.ffmpeg.version>
-		<jersey.version>2.26</jersey.version>
+		<jersey.version>2.27</jersey.version>
 		<mapdb.version>3.0.7</mapdb.version>
 		<vertx-core.version>3.5.3</vertx-core.version>
 		<enunciate.version>2.10.0</enunciate.version>
