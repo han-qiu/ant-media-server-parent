@@ -3,6 +3,7 @@
   <groupId>io.antmedia</groupId>
   <artifactId>parent</artifactId>
   <version>1.5.0-SNAPSHOT</version>
+
   <packaging>pom</packaging>
   
     <name>Ant Media Server :: Parent</name>
@@ -82,19 +83,22 @@
         <tomcat.version>8.5.11</tomcat.version>
         <red5-io.version>1.0.9-M2</red5-io.version> 
         <cors-filter.version>2.5</cors-filter.version>
-		<periscope-api.version>1.1.0</periscope-api.version>
-		<restfb.version>1.43.0</restfb.version>
+		<periscope-api.version>1.2.0</periscope-api.version>
+		<restfb.version>2.9.0</restfb.version>
 		<servlet.version>2.5</servlet.version>
+		<youtube.api.version>v3-rev205-1.24.1</youtube.api.version>
 		<maven-failsafe-plugin.version>2.20.1</maven-failsafe-plugin.version>
 		<javacpp.ffmpeg.version>3.4.2-1.4.1</javacpp.ffmpeg.version>
-		<jersey.version>2.26</jersey.version>
+		<jersey.version>2.27</jersey.version>
 		<mapdb.version>3.0.7</mapdb.version>
-		<vertx-core.version>3.4.2</vertx-core.version>
+		<vertx-core.version>3.5.3</vertx-core.version>
 		<enunciate.version>2.10.0</enunciate.version>
+
 		<webrtcapp.version>${project.parent.version}</webrtcapp.version>
 		<consoleapp.version>${project.parent.version}</consoleapp.version>
 		<liveapp.version>${project.parent.version}</liveapp.version>
 		<webrtcappee.version>${project.parent.version}</webrtcappee.version>	
+
 		<ant-media-server-service.version>1.2.3</ant-media-server-service.version>
 
 		<ant-media-server-enterprise.version>${project.parent.version}</ant-media-server-enterprise.version>
