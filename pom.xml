@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.antmedia</groupId>
   <artifactId>parent</artifactId>
-  <version>1.5.1</version>
+  <version>1.5.2-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   
@@ -96,12 +96,12 @@
 		<webrtcapp.version>1.5.1</webrtcapp.version>
 		<consoleapp.version>1.5.1</consoleapp.version>
 		<liveapp.version>1.5.1</liveapp.version>
-		<webrtcappee.version>1.5.1</webrtcappee.version>	
+		<webrtcappee.version>1.5.2-SNAPSHOT</webrtcappee.version>	
 		<ant-media-server-service.version>1.2.3</ant-media-server-service.version>
 
 		<ant-media-server-enterprise.version>${project.parent.version}</ant-media-server-enterprise.version>
         <ant-media-server.version>${project.parent.version}</ant-media-server.version>
-        <red5-server-common.version>${project.parent.version}</red5-server-common.version>
+        <red5-server-common.version>1.5.1</red5-server-common.version>
         
     </properties>
     <repositories>
