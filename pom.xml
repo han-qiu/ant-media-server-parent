@@ -93,7 +93,7 @@
 		<mapdb.version>3.0.7</mapdb.version>
 		<vertx-core.version>3.5.3</vertx-core.version>
 		<enunciate.version>2.10.0</enunciate.version>
-		<webrtcapp.version>1.5.1</webrtcapp.version>
+		<webrtcapp.version>${project.parent.version}</webrtcapp.version>
 		<consoleapp.version>1.5.1</consoleapp.version>
 		<liveapp.version>1.5.1</liveapp.version>
 		<webrtcappee.version>${project.parent.version}</webrtcappee.version>	
