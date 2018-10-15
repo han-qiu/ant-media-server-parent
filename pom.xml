@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.antmedia</groupId>
   <artifactId>parent</artifactId>
-  <version>1.5.1.1</version>
+  <version>1.5.2-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   
@@ -93,10 +93,10 @@
 		<mapdb.version>3.0.7</mapdb.version>
 		<vertx-core.version>3.5.3</vertx-core.version>
 		<enunciate.version>2.10.0</enunciate.version>
-		<webrtcapp.version>1.5.1</webrtcapp.version>
+		<webrtcapp.version>${project.parent.version}</webrtcapp.version>
 		<consoleapp.version>1.5.1</consoleapp.version>
 		<liveapp.version>1.5.1</liveapp.version>
-		<webrtcappee.version>1.5.1</webrtcappee.version>	
+		<webrtcappee.version>${project.parent.version}</webrtcappee.version>	
 		<ant-media-server-service.version>1.2.3</ant-media-server-service.version>
 
 		<ant-media-server-enterprise.version>${project.parent.version}</ant-media-server-enterprise.version>
