@@ -3,7 +3,6 @@
   <groupId>io.antmedia</groupId>
   <artifactId>parent</artifactId>
   <version>1.6.0-SNAPSHOT</version>
-
   <packaging>pom</packaging>
   
     <name>Ant Media Server :: Parent</name>
@@ -93,9 +92,10 @@
 		<mapdb.version>3.0.7</mapdb.version>
 		<vertx-core.version>3.5.3</vertx-core.version>
 		<enunciate.version>2.10.0</enunciate.version>	
+		<liveapp.version>${project.parent.version}</liveapp.version>
+		<jsr305.version>3.0.2</jsr305.version>
 		<webrtcapp.version>1.5.2-SNAPSHOT</webrtcapp.version>
 		<consoleapp.version>1.5.2-SNAPSHOT</consoleapp.version>
-		<liveapp.version>${project.parent.version}</liveapp.version>
 		<webrtcappee.version>${project.parent.version}</webrtcappee.version>		
 		<ant-media-server-service.version>1.2.3</ant-media-server-service.version>
 
@@ -229,10 +229,10 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.5.1</version>
 				<configuration>
-					<compilerVersion>1.7</compilerVersion>
+					<compilerVersion>1.8</compilerVersion>
 					<fork>true</fork>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 					<executable>${maven.compiler.executable}</executable>
 				</configuration>
 			</plugin>
