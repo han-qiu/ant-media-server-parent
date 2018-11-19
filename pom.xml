@@ -3,6 +3,7 @@
   <groupId>io.antmedia</groupId>
   <artifactId>parent</artifactId>
   <version>1.6.0-SNAPSHOT</version>
+
   <packaging>pom</packaging>
   
     <name>Ant Media Server :: Parent</name>
@@ -93,7 +94,7 @@
 		<vertx-core.version>3.5.3</vertx-core.version>
 		<enunciate.version>2.10.0</enunciate.version>	
 		<webrtcapp.version>1.5.2-SNAPSHOT</webrtcapp.version>
-		<consoleapp.version>1.5.1</consoleapp.version>
+		<consoleapp.version>1.5.2-SNAPSHOT</consoleapp.version>
 		<liveapp.version>${project.parent.version}</liveapp.version>
 		<webrtcappee.version>${project.parent.version}</webrtcappee.version>		
 		<ant-media-server-service.version>1.2.3</ant-media-server-service.version>
