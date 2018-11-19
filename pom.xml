@@ -94,6 +94,7 @@
 		<enunciate.version>2.10.0</enunciate.version>	
 		<liveapp.version>${project.parent.version}</liveapp.version>
 		<jsr305.version>3.0.2</jsr305.version>
+		<enunciate.version>2.10.0</enunciate.version>
 		<webrtcapp.version>1.5.2-SNAPSHOT</webrtcapp.version>
 		<consoleapp.version>1.5.2-SNAPSHOT</consoleapp.version>
 		<webrtcappee.version>${project.parent.version}</webrtcappee.version>		
