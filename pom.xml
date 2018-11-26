@@ -96,7 +96,7 @@
 		<jsr305.version>3.0.2</jsr305.version>
 		<enunciate.version>2.10.0</enunciate.version>
 		<webrtcapp.version>${project.parent.version}</webrtcapp.version>
-		<consoleapp.version>1.5.2-SNAPSHOT</consoleapp.version>
+		<consoleapp.version>${project.parent.version}</consoleapp.version>
 		<webrtcappee.version>${project.parent.version}</webrtcappee.version>		
 		<ant-media-server-service.version>1.2.3</ant-media-server-service.version>
 
