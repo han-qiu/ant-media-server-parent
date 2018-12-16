@@ -92,12 +92,12 @@
 		<mapdb.version>3.0.7</mapdb.version>
 		<vertx-core.version>3.5.3</vertx-core.version>
 		<enunciate.version>2.10.0</enunciate.version>	
-		<liveapp.version>${project.parent.version}</liveapp.version>
 		<jsr305.version>3.0.2</jsr305.version>
 		<enunciate.version>2.10.0</enunciate.version>
-		<webrtcapp.version>${project.parent.version}</webrtcapp.version>
-		<consoleapp.version>${project.parent.version}</consoleapp.version>
-		<webrtcappee.version>${project.parent.version}</webrtcappee.version>		
+		<webrtcapp.version>1.6.0</webrtcapp.version>
+		<consoleapp.version>1.6.0</consoleapp.version>
+		<webrtcappee.version>1.6.0</webrtcappee.version>	
+		<liveapp.version>1.6.0</liveapp.version>	
 		<ant-media-server-service.version>1.2.3</ant-media-server-service.version>
 
 		<ant-media-server-enterprise.version>${project.parent.version}</ant-media-server-enterprise.version>
