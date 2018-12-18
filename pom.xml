@@ -98,7 +98,7 @@
 		<enunciate.version>2.10.0</enunciate.version>
 		
 		<webrtcapp.version>1.6.0</webrtcapp.version>
-		<consoleapp.version>1.6.0</consoleapp.version>
+		<consoleapp.version>${project.parent.version}</consoleapp.version>
 		<webrtcappee.version>1.6.1-SNAPSHOT</webrtcappee.version>	
 		<liveapp.version>1.6.0</liveapp.version>	
 
