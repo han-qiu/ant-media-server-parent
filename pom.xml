@@ -96,7 +96,7 @@
 		<enunciate.version>2.10.0</enunciate.version>
 		<webrtcapp.version>1.6.0</webrtcapp.version>
 		<consoleapp.version>1.6.0</consoleapp.version>
-		<webrtcappee.version>1.6.0</webrtcappee.version>	
+		<webrtcappee.version>${project.parent.version}</webrtcappee.version>	
 		<liveapp.version>1.6.0</liveapp.version>	
 		<ant-media-server-service.version>1.2.3</ant-media-server-service.version>
 
