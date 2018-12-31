@@ -101,7 +101,7 @@
 		
 		<webrtcapp.version>1.6.1-SNAPSHOT</webrtcapp.version>
 		<consoleapp.version>${project.parent.version}</consoleapp.version>
-		<webrtcappee.version>1.6.1-SNAPSHOT</webrtcappee.version>	
+		<webrtcappee.version>${project.parent.version}</webrtcappee.version>	
 		<liveapp.version>1.6.1-SNAPSHOT</liveapp.version>	
 
 		<ant-media-server-service.version>1.6.1-SNAPSHOT</ant-media-server-service.version>
