@@ -82,7 +82,7 @@
         <tomcat.version>8.5.11</tomcat.version>
         <red5-io.version>1.0.9-M2</red5-io.version> 
         <cors-filter.version>2.5</cors-filter.version>
-		<periscope-api.version>1.2.0</periscope-api.version>
+		<periscope-api.version>1.3.0</periscope-api.version>
 		<restfb.version>2.9.0</restfb.version>
 		<servlet.version>2.5</servlet.version>
 		<youtube.api.version>v3-rev205-1.25.0</youtube.api.version>
@@ -457,6 +457,9 @@
 	</profiles>
 	
 	-->
+	<modules>
+		<module>../ManagementConsole_WebApp</module>
+	</modules>
 </project>
 
   
