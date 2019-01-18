@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.antmedia</groupId>
   <artifactId>parent</artifactId>
-  
+
   <version>1.7.0-SNAPSHOT</version>
 
   <packaging>pom</packaging>
@@ -84,7 +84,7 @@
         <tomcat.version>8.5.11</tomcat.version>
         <red5-io.version>1.0.9-M2</red5-io.version> 
         <cors-filter.version>2.5</cors-filter.version>
-		<periscope-api.version>1.2.0</periscope-api.version>
+		<periscope-api.version>1.3.0</periscope-api.version>
 		<restfb.version>2.9.0</restfb.version>
 		<servlet.version>2.5</servlet.version>
 		<youtube.api.version>v3-rev205-1.25.0</youtube.api.version>
@@ -96,20 +96,8 @@
 		<vertx-core.version>3.5.3</vertx-core.version>
 		<enunciate.version>2.10.0</enunciate.version>	
 		<jsr305.version>3.0.2</jsr305.version>
-		<enunciate.version>2.10.0</enunciate.version>
+		<enunciate.version>2.10.0</enunciate.version>        
 
-		
-		<webrtcapp.version>1.6.1-SNAPSHOT</webrtcapp.version>
-		<consoleapp.version>${project.parent.version}</consoleapp.version>
-		<webrtcappee.version>${project.parent.version}</webrtcappee.version>	
-		<liveapp.version>1.6.1-SNAPSHOT</liveapp.version>	
-
-		<ant-media-server-service.version>1.6.1-SNAPSHOT</ant-media-server-service.version>
-
-		<ant-media-server-enterprise.version>${project.parent.version}</ant-media-server-enterprise.version>
-    <ant-media-server.version>${project.parent.version}</ant-media-server.version>
-		<ant-media-server-common.version>${project.parent.version}</ant-media-server-common.version>
-        
     </properties>
     <repositories>
         <repository>
@@ -391,77 +379,6 @@
 		</plugins>
 
 	</build>
-	<!--  
-	
-	<profiles>
-		<profile>
-			<id>release</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.sonatype.plugins</groupId>
-						<artifactId>nexus-staging-maven-plugin</artifactId>
-						<version>1.6.7</version>
-						<extensions>true</extensions>
-						<configuration>
-							<serverId>ossrh</serverId>
-							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
-							<autoReleaseAfterClose>true</autoReleaseAfterClose>
-						</configuration>
-					</plugin>
-					<plugin>
-						<artifactId>maven-gpg-plugin</artifactId>
-						<version>1.6</version>
-						<executions>
-							<execution>
-								<id>sign-artifacts</id>
-								<phase>verify</phase>
-								<goals>
-									<goal>sign</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-			<distributionManagement>
-				<snapshotRepository>
-					<id>ossrh</id>
-					<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-				</snapshotRepository>
-				<repository>
-					<id>ossrh</id>
-					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-				</repository>
-			</distributionManagement>
-		</profile>
-		<profile>
-			<id>updatebuildnumber</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>buildnumber-maven-plugin</artifactId>
-						<executions>
-							<execution>
-								<phase>validate</phase>
-								<goals>
-									<goal>create</goal>
-								</goals>
-							</execution>
-						</executions>
-						<configuration>
-							<doCheck>false</doCheck>
-							<doUpdate>false</doUpdate>
-							<shortRevisionLength>5</shortRevisionLength>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
-	
-	-->
 </project>
 
   
