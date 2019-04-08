@@ -49,7 +49,7 @@
         </developer>
         <developer>
             <id>Davut Cavdar</id>
-            <email>davut@antmedia.io</email>
+            <email>david@antmedia.io</email>
         </developer>
         <developer>
             <id>Selim Emre Toy</id>
@@ -95,6 +95,7 @@
 		<enunciate.version>2.10.0</enunciate.version>	
 		<jsr305.version>3.0.2</jsr305.version>
 		<enunciate.version>2.10.0</enunciate.version>        
+
     </properties>
     <repositories>
         <repository>
