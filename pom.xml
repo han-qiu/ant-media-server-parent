@@ -95,6 +95,7 @@
 		<enunciate.version>2.10.0</enunciate.version>	
 		<jsr305.version>3.0.2</jsr305.version>
 		<enunciate.version>2.10.0</enunciate.version>        
+		<kafka-streams.version>2.2.0</kafka-streams.version>
 
     </properties>
     <repositories>
@@ -212,6 +213,11 @@
 				<version>${junit.version}</version>
 				<scope>test</scope>
 			</dependency>
+			<dependency>
+			    <groupId>org.apache.kafka</groupId>
+			    <artifactId>kafka-streams</artifactId>
+			    <version>${kafka-streams.version}</version>
+       		</dependency>
 		</dependencies>
 	</dependencyManagement>
 
