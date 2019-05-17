@@ -29,6 +29,6 @@ deploy:
   script: mvn deploy -DskipTests --quiet --settings mvn-settings.xml
   skip_cleanup: true
   on:
-  #deploy to maven if it is a release tagged
+  #deploy to maven if it is a release tagged. If it starts with ams-v
     tags: true
-    condition: $TRAVIS_TAG =~ ^release 
+    condition: $TRAVIS_TAG =~ ^ams-v
