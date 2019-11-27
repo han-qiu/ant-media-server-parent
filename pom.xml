@@ -12,7 +12,7 @@
     	<parent>
 		<groupId>org.red5</groupId>
 		<artifactId>red5-parent</artifactId>
-		<version>1.0.9-M2</version>
+		<version>1.2.3</version>
 	</parent>
 	<organization>
 		<name>Ant Media</name>
