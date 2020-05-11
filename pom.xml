@@ -99,6 +99,7 @@
 		<kafka-streams.version>2.2.0</kafka-streams.version>
 		<openjfx.graphics.version>11.0.2</openjfx.graphics.version>
 		<guava.lib.version>27.1-jre</guava.lib.version>
+		<tensorflow.version>1.15.0</tensorflow.version>
     </properties>
     <repositories>
         <repository>
