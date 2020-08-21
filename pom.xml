@@ -60,6 +60,15 @@
     	<java.version>11</java.version>
     	<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
+		<maven-bundle-plugin.version>4.2.0</maven-bundle-plugin.version>
+		<maven-source-plugin.version>3.1.0</maven-source-plugin.version>
+		<maven-dependency-plugin.version>3.1.1</maven-dependency-plugin.version>
+		<maven-war-plugin.version>3.3.1</maven-war-plugin.version>
+		<maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
+		<exec-maven-plugin.version>1.6.0</exec-maven-plugin.version>
+		<maven-release-plugin.version>3.0.5</maven-release-plugin.version>
+		<nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <skipTests>true</skipTests>
         <tomcatplugin.version>1.18</tomcatplugin.version>
@@ -102,14 +111,6 @@
 		<openjfx.graphics.version>11.0.2</openjfx.graphics.version>
 		<guava.lib.version>29.0-jre</guava.lib.version>
 		<tensorflow.version>1.15.0</tensorflow.version>
-		<nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
-		<maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
-		<maven-bundle-plugin.version>4.2.0</maven-bundle-plugin.version>
-		<maven-source-plugin.version>3.1.0</maven-source-plugin.version>
-		<maven-dependency-plugin.version>3.1.1</maven-dependency-plugin.version>
-		<maven-war-plugin.version>3.3.1</maven-war-plugin.version>
-		<maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
-		<exec-maven-plugin.version>1.6.0</exec-maven-plugin.version>
 		<httpmime.version>4.3.6</httpmime.version>
 		<mockito-core.version>2.20.0</mockito-core.version>
 		<awaitility.version>3.1.6</awaitility.version>
@@ -282,7 +283,7 @@
 					</dependencySourceIncludes>
 					<detectOfflineLinks>false</detectOfflineLinks>
 					<links>
-						<link>http://download.oracle.com/javase/7/docs/api</link>
+						<link>http://download.oracle.com/javase/11/docs/api</link>
 						<link>http://docs.spring.io/spring/docs/${spring.version}/javadoc-api</link>
 					</links>
 					<tags>
@@ -362,7 +363,7 @@
 			</plugin>
 			<plugin>
 				<artifactId>maven-release-plugin</artifactId>
-				<version>3.0.5</version>
+				<version>${maven-release-plugin.version}</version>
 				<configuration>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<useReleaseProfile>false</useReleaseProfile>
@@ -396,7 +397,6 @@
 				</executions>
 			</plugin>
 		</plugins>
-
 	</build>
 </project>
 
