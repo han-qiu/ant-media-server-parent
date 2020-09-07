@@ -104,7 +104,7 @@
 		<javacpp.cuda.version>10.2-7.6-1.5.3</javacpp.cuda.version>
 		<jersey.version>2.31</jersey.version>
 		<mapdb.version>3.0.8</mapdb.version>
-		<vertx-core.version>3.9.2</vertx-core.version>
+		<vertx-core.version>3.5.4</vertx-core.version>
 		<enunciate.version>2.13.1</enunciate.version>	
 		<jsr305.version>3.0.2</jsr305.version>      
 		<kafka-streams.version>2.2.1</kafka-streams.version>
