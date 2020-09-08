@@ -73,7 +73,7 @@
         <skipTests>true</skipTests>
         <tomcatplugin.version>1.18</tomcatplugin.version>
         <websocket.version>1.9</websocket.version>
-        <spring.version>4.3.28.RELEASE</spring.version>
+        <spring.version>5.1.17.RELEASE</spring.version>
         <mina.version>2.0.21</mina.version>
         <slf4j.version>1.7.28</slf4j.version>
         <logback.version>1.1.9</logback.version>
@@ -92,7 +92,7 @@
         <httpcore.version>4.4.11</httpcore.version>
         <xerces.version>2.12.0</xerces.version>
         <cglib.version>3.2.7</cglib.version>
-        <tomcat.version>8.5.45</tomcat.version>
+        <tomcat.version>8.5.57</tomcat.version>
         <red5-io.version>1.2.2</red5-io.version> 
         <cors-filter.version>2.5</cors-filter.version>
 		<periscope-api.version>1.3.0</periscope-api.version>
