@@ -88,8 +88,8 @@
 		<servlet.version>2.5</servlet.version>
 		<youtube.api.version>v3-rev205-1.25.0</youtube.api.version>
 		<maven-failsafe-plugin.version>2.20.1</maven-failsafe-plugin.version>
-		<javacpp.ffmpeg.version>4.3.1-1.5.4-SNAPSHOT</javacpp.ffmpeg.version>
-		<javacpp.cuda.version>10.2-7.6-1.5.4-SNAPSHOT</javacpp.cuda.version>
+		<javacpp.ffmpeg.version>4.3.1-1.5.4</javacpp.ffmpeg.version>
+		<javacpp.cuda.version>11.0-8.0-1.5.4</javacpp.cuda.version>
 		<jersey.version>2.27</jersey.version>
 		<mapdb.version>3.0.7</mapdb.version>
 		<vertx-core.version>3.5.3</vertx-core.version>
