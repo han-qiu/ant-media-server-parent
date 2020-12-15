@@ -71,7 +71,7 @@
 		<nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <skipTests>true</skipTests>
-        <tomcatplugin.version>1.18</tomcatplugin.version>
+        <tomcatplugin.version>${project.version}</tomcatplugin.version>
         <websocket.version>1.9</websocket.version>
         <spring.version>4.3.28.RELEASE</spring.version>
         <mina.version>2.0.21</mina.version>
